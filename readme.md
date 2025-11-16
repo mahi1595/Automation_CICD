@@ -1,11 +1,9 @@
 Selenium 4.35 Learning & Implementation 🚀
 This repository contains my hands-on learning journey with Selenium 4.x Web Automation. I’ll be implementing each concept from [TheTestingAcademy - Selenium 4.x Notes by Pramod] and documenting my progress step by step.
-
 📘 Topics Covered
 Based on the notes, this repo will include implementations for:
 
 Getting Started with Selenium
-
 Setting up Java, Maven & IntelliJ/Eclipse
 Running the first Selenium script
 WebDriver architecture & browser drivers
@@ -15,8 +13,8 @@ findElement vs findElements
 XPath (Absolute, Relative, Functions, Axes)
 CSS Selectors
 Handling forms, text fields, checkboxes, radio buttons
-Selenium Waits ⏳
 
+Selenium Waits ⏳
 Implicit Wait
 Explicit Wait (ExpectedConditions)
 Fluent Wait
