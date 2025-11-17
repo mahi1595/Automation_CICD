@@ -21,11 +21,11 @@ public class JS_exe {
 
         WebElement scrolltill = driver.findElement(By.xpath("//div[@id='userName']"));
         //Scroll down till element is found
-        js.executeScript("arguments[0].scrollIntoView(true);", scrolltill);
+        //js.executeScript("arguments[0].scrollIntoView(true);", scrolltill);
 // scrolli by pixed //clicking on element using js executor
         js.executeScript("window.scrollBy(0,500);");
         js.executeScript("window.scrollBy(0,500);");
-        System.out.println("url is " + driver.getPageSource());
+        //System.out.println("url is " + driver.getPageSource());
         System.out.println("page source is" + driver.getCurrentUrl());
 
     }
