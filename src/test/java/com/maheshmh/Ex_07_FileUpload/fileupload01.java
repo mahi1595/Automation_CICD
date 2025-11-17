@@ -20,10 +20,12 @@ public class fileupload01 {
         WebElement upload = driver.findElement(By.xpath("// input [@id ='fileToUpload']"));
 // need to give user directory
         String userdir = System.getProperty("user.dir"); // location of user directory
-        String filepath = userdir + "C:\\Users\\Admin\\IdeaProjects\\SeleniumLearning\\src\\test\\java\\com\\maheshmh\\Ex_07_FileUpload\\test.txt";
+        //String filepath = userdir + "/src/test/java/com/maheshmh/Ex_07_FileUpload/test.txt";
+        String filepath2 = "C:/Users/Admin/Downloads/file.txt";
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        upload.sendKeys(filepath);
-
+        upload.sendKeys(filepath2);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.findElement(By.xpath("// input [@name='submit']")).click();
+        driver.quit();
     }
 }
