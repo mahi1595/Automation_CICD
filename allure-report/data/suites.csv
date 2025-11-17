@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Verify that with valid email, pass, appointment page is loaded","6702","test_login_health","Default Suite","2025-11-16","passed","2025-11-16","com.maheshmh.EX03_locators.login_health","SeleniumLearning","com.maheshmh.EX03_locators.login_health","test_login_health"
+"Verify that the error message comes with invalid email on signup page.","9032","test_invalidlogin_health","Default Suite","2025-11-16","passed","2025-11-16","com.maheshmh.EX03_locators.login_health","SeleniumLearning","com.maheshmh.EX03_locators.login_health","test_invalidlogin_health"
+"Check all checkboz and radio button","1869","allvalidation","Default Suite","2025-11-17","passed","2025-11-17","com.maheshmh.EX04_Input_alerts_radiobox_checkbox.Input_Checkbox_Radio","SeleniumLearning","com.maheshmh.EX04_Input_alerts_radiobox_checkbox.Input_Checkbox_Radio","allvalidation"

@@ -25,6 +25,7 @@ public class login_health extends Commontoall {
         WebDriver driver = new ChromeDriver();
         //openbrowser(driver, "https://healthunify.com/bmicalculator/"); //
         driver.get("https://katalon-demo-cura.herokuapp.com/");
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 //   step1
@@ -61,8 +62,9 @@ public class login_health extends Commontoall {
     @Test(priority = 1)
     public void test_invalidlogin_health() {
         WebDriver driver = new ChromeDriver();
-        openbrowser(driver, "https://katalon-demo-cura.herokuapp.com/"); //
-
+        //  openbrowser(driver, "https://katalon-demo-cura.herokuapp.com/"); //
+        driver.navigate().to("https://katalon-demo-cura.herokuapp.com/");
+        driver.manage().window().maximize();
 //   step1
         WebElement making_appointmewnt = driver.findElement(By.xpath("//a[@id= 'btn-make-appointment']"));
         making_appointmewnt.click();
@@ -73,12 +75,12 @@ public class login_health extends Commontoall {
         pass.sendKeys("123");
         WebElement login = driver.findElement(By.xpath("//button[@id = 'btn-login']"));
         login.click();
-
-        WebElement error_msg = driver.findElement(By.xpath("//p[contains(text(),'Login failed!')]"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        WebElement error_msg = driver.findElement(By.xpath("//p[@class='lead text-danger']"));
+
         String errors_message = error_msg.getText();
         System.out.println("error message is -->" + errors_message);
-        Assert.assertEquals(error_msg, "Login failed! Please ensure the username and password are valid.");
+        Assert.assertEquals(errors_message, "Login failed! Please ensure the username and password are valid.");
         close_browser(driver);
 
     }

@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/Administrator/IdeaProjects/SeleniumLearning"><classes><class name="com.maheshmh.EX01_BasicofSelenium.TestSelenium03"><methods><include name="test_Selenium01"/></methods></class><class name="com.maheshmh.EX01_BasicofSelenium.TestSelenium09_Assertion_TestNG"><methods><include name="test_selenium_assertion"/></methods></class><class name="com.maheshmh.EX01_BasicofSelenium.TestSelenium12_Navigations"><methods><include name="test_Selenium01"/></methods></class><class name="com.maheshmh.EX01_BasicofSelenium.TestSelenium_ProjectNo1"><methods><include name="test_verify_text_katalon"/></methods></class><class name="com.maheshmh.SmallProject.Proj1"><methods><include name="test_vwo_login_invalid_login"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Administrator/IdeaProjects/SeleniumLearning">
+        <classes>
+            <class name="com.maheshmh.EX03_locators.login_health">
+               <methods>
+                   <include name="test_invalidlogin_health" >
+                   </include>
+               </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
