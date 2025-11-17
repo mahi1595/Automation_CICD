@@ -8,22 +8,37 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class Static_dropdown {
 
-    @Description ("Static dropdown handelling")
+    @Description("Static dropdown handelling")
     @Test
-    public void dropdown(){
+    public void dropdown() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/dropdown");
         driver.getTitle();
         driver.manage().window().maximize();
 
-       WebElement dropdow =  driver.findElement(By.xpath("//select[@id='dropdown']"));
+        WebElement dropdow = driver.findElement(By.xpath("//select[@id='dropdown']"));
         dropdow.click();
-        Select  selectdropdwn = new Select(dropdow);
-        selectdropdwn.selectByIndex(0);
+        Select selectdropdwn = new Select(dropdow);
+        selectdropdwn.selectByIndex(1);
+        String Selectedoption = selectdropdwn.getFirstSelectedOption().getText();
+        System.out.println("selected option is:-" + Selectedoption);
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        dropdow.click();
+        Thread.sleep(3000);
+        selectdropdwn.selectByVisibleText("Option 2");
+        String newoption = selectdropdwn.getFirstSelectedOption().getText();
+        System.out.println("new option is:- " + newoption);
+        driver.quit();
     }
 }
+
+
+
 
 
 
