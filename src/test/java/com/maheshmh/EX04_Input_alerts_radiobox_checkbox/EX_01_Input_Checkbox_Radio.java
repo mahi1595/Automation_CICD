@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Input_Checkbox_Radio {
+public class EX_01_Input_Checkbox_Radio {
 
 
     @Description("Check all checkboz and radio button")

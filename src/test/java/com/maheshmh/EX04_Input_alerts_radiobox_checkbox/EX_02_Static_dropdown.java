@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Static_dropdown {
+public class EX_02_Static_dropdown {
 
     @Description("Static dropdown handelling")
     @Test
