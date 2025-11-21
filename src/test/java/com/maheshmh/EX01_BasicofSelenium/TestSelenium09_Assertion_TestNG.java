@@ -18,7 +18,7 @@ public class TestSelenium09_Assertion_TestNG {
         driver.get("https://google.com");
 
         // TestNG Assertion
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.google.com");
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.google.com/");
 
         // AssertJ
         assertThat(driver.getCurrentUrl()).isNotBlank().isNotNull().isEqualTo("https://www.google.com");
