@@ -3,11 +3,8 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Administrator/IdeaProjects/SeleniumLearning">
         <classes>
-            <class name="com.maheshmh.EX03_locators.login_health">
-               <methods>
-                   <include name="test_invalidlogin_health" >
-                   </include>
-               </methods>
+            <class name="com.maheshmh.EX_13_DataDriven.EX_04_DataDrivern_Realtime">
+
             </class>
         </classes>
     </test>

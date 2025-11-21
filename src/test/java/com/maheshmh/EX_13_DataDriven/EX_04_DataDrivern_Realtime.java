@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,7 +19,9 @@ import java.time.Duration;
 @Test(dataProvider = "getdata")
 public class EX_04_DataDrivern_Realtime {
     public void vwo_login(String username, String password) throws InterruptedException {
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+       options.addArguments("headless");
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://app.vwo.com");
         //        // 1) Simple split (escape pipe)
 //        String[] parts1 = password.split("\\|");
