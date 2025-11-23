@@ -19,9 +19,9 @@ import java.time.Duration;
 @Test(dataProvider = "getdata")
 public class EX_04_DataDrivern_Realtime {
     public void vwo_login(String username, String password) throws InterruptedException {
-        ChromeOptions options = new ChromeOptions();
-       options.addArguments("headless");
-        WebDriver driver = new ChromeDriver(options);
+      //  ChromeOptions options = new ChromeOptions();
+     //  options.addArguments("headless");
+        WebDriver driver = new ChromeDriver();
         driver.get("https://app.vwo.com");
         //        // 1) Simple split (escape pipe)
 //        String[] parts1 = password.split("\\|");
